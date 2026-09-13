@@ -61,7 +61,11 @@ details[open] > summary::before {
     background: pink;
 }
 
-.accessories_top {
+.accessories {
+    z-index: 8;
+}
+
+.accessories.top {
     position: absolute;
     top: 14px;
     left: 14px;
@@ -70,11 +74,47 @@ details[open] > summary::before {
     background: #ff000088;
 }
 
-.accessories_bottom {
+.accessories.bottom {
     position: absolute;
     bottom: 14px;
     left: 14px;
     width: 340px;
     height: 11px;
     background: #ff000088;
+}
+
+.border_top {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 354px;
+    height: 27px;
+    background: #0000ff88;
+}
+
+.border_bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 354px;
+    height: 16px;
+    background: #0000ff88;
+}
+
+.border_left {
+    position: absolute;
+    bottom: 21px;
+    left: 7px;
+    height: 203px;
+    width: 10px;
+    background: #ffff0088;
+}
+
+.border_right {
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    height: 240px;
+    width: 10px;
+    background: #ffff0088;
 }
