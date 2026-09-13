@@ -1,7 +1,80 @@
+/* delete later */
+
 .reference {
-  width: 80%;
+  width: 65%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
+  position: absolute;
 }
 
+/* admin stuff */
+
+figure {
+  margin: 0 auto;
+  padding: 0;
+}
+
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: '';
+}
+
+details[open] > summary::before {
+  content: '';
+}
+
+/* what i'm trying to do */
+
+.open_close {
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin: 20px auto;
+    color: red;
+}
+
+.open_close > summary {
+    position: absolute;
+}
+
+.container {
+    background: #00ff0033;
+    width: 370px;
+    height: 255px;
+    position: relative;
+}
+
+.main_body {
+    position: absolute;
+    top: 35px;
+    left: 14px;
+    width: 340px;
+    height: 195px;
+    background: pink;
+}
+
+.accessories_top {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 340px;
+    height: 21px;
+    background: #ff000088;
+}
+
+.accessories_bottom {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    width: 340px;
+    height: 11px;
+    background: #ff000088;
+}
